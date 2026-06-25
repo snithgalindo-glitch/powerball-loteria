@@ -45,7 +45,7 @@ if (document.getElementById("premio")) {
 }// --- CONFIGURACIÓN DE LA FECHA DEL SORTEO ---
 // Define aquí la fecha exacta del próximo sorteo (Año, Mes [0-11], Día, Hora, Minutos)
 // Nota: En JavaScript los meses van de 0 (Enero) a 11 (Diciembre). Mayo es 4.
-const fechaSorteo = new Date(2026, 11, 31, 23, 59, 59).getTime(); 
+const fechaSorteo = new Date(2026, 6, 27, 21, 59, 59).getTime(); 
 
 function actualizarContador() {
     const ahora = new Date().getTime();
