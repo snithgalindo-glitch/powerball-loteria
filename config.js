@@ -6,8 +6,8 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const contrasena = document.getElementById('password').value;
 
     // Aquí puedes poner el usuario y contraseña que tú quieras de prueba:
-    if (usuario === "juan" && contrasena === "1234") {
-        alert("¡Bienvenido Juan!");
+    if (usuario === "VictorZamora" && contrasena === "2413") {
+        alert("¡Bienvenido Victor Zamora Argueta!");
         window.location.href = "premio.html"; // Te manda a la pantalla que arreglamos antes
     } else {
         alert("Usuario o contraseña incorrectos. (Prueba con juan y 1234)");
