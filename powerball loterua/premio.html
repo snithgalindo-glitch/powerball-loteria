@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerBall | Panel Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="premio-page">
+
+    <!-- Contenedor Principal de la App -->
+    <div class="dashboard-container">
+        
+        <!-- Barra superior: Logo y Fecha de Sorteo -->
+        <header class="top-header">
+
+<img src="img/Powerball_logo.svg.png" alt="PowerBall" class="login-logo">
+            <div class="fecha-sorteo-top">
+                <span class="fecha-label">Fecha del Sorteo</span>
+                <span class="fecha-valor">18 de Mayo, 2026</span>
+            </div>
+        </header>
+
+        <!-- Bloque de Monto Mayor -->
+        <section class="main-prize-section">
+            <h2 class="premio-mayor-title">PREMIO MAYOR</h2>
+            <div class="monto-container">
+                <span class="currency-badge">USD</span>
+                <h1 id="premioMonto" class="premio-monto">1,000</h1>
+            </div>
+            <div class="sub-badge">DÓLARES AMERICANOS</div>
+        </section>
+
+        <!-- Esferas con los Números Ganadores -->
+        <section class="numeros-ganadores-section">
+            <div class="bola blanca">12</div>
+            <div class="bola blanca">23</div>
+            <div class="bola blanca">34</div>
+            <div class="bola blanca">56</div>
+            <div class="bola roja">10</div>
+        </section>
+
+        <!-- Tarjeta del Próximo Sorteo y Contador (Glassmorphism) -->
+        <div class="contador-box">
+            <div class="contador-header">
+                <span class="estrella">★</span> PRÓXIMO SORTEO
+            </div>
+            <h3 class="contador-fecha">Miércoles, 22 de Octubre, 2026</h3>
+            
+            <div id="contador" class="contador-grid">
+                <div class="tiempo-item">
+                    <span class="numero"></span>
+                    <span class="etiqueta">DÍAS</span>
+                </div>
+                <div class="linea-divisoria"></div>
+                <div class="tiempo-item">
+                    <span class="numero"></span>
+                    <span class="etiqueta">HORAS</span>
+                </div>
+                <div class="linea-divisoria"></div>
+                <div class="tiempo-item">
+                    <span class="numero"></span>
+                    <span class="etiqueta">MINUTOS</span>
+                </div>
+                <div class="linea-divisoria"></div>
+                <div class="tiempo-item">
+                    <span class="numero"></span>
+                    <span class="etiqueta">SEGUNDOS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón para cerrar sesión integrado de forma sutil -->
+        <button onclick="cerrarSesion()" class="logout-btn">
+            CERRAR SESIÓN
+        </button>
+
+    </div>
+
+    <!-- Pie de página legal -->
+    <footer class="legal-footer">
+        <p>⚠️ Juega responsablemente. Debes tener 18 años o más para participar.</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

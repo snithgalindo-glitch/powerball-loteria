@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerBall | Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="login-page">
+
+    <div class="login-card">
+        
+        <div class="login-header">
+           
+
+<img src="img/Powerball_logo.svg.png" alt="PowerBall" class="login-logo">
+        </div>
+
+        <form id="loginForm" class="login-form" onsubmit="event.preventDefault();">
+            
+            <div class="input-group">
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" id="username" placeholder="Ingresa tu usuario" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <div class="form-options">
+                <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit" class="login-btn">
+                INGRESAR
+            </button>
+
+        </form>
+
+    </div>
+
+    <footer class="legal-footer-login">
+        <p>⚠️ Sistema seguro de acceso para usuarios registrados.</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
