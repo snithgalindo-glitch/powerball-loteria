@@ -10,6 +10,6 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         alert("¡Bienvenido Victor Zamora Argueta!");
         window.location.href = "premio.html"; // Te manda a la pantalla que arreglamos antes
     } else {
-        alert("Usuario o contraseña incorrectos. (Prueba con juan y 1234)");
+        alert("Usuario o contraseña incorrectos.)");
     }
 });
